@@ -7,9 +7,6 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-#plateW = 3 
-plateL = 2
-
 # функция ввода значений ================================
 def sInput(s):
     flag1 = True
@@ -35,17 +32,14 @@ plateL = sInput('Введите длину плитки в дольках: ')
 print()
 
 while flag:
-    
     neededPart = sInput('Сколько долек отламываем? Введите число: ')
     print()
 
     # проверка на "пустой" ввод или превышение количества долек в плитке
-    if neededPart == 0: 
-        print('Без ложной скромности, пожалуйста...')
-    elif plateL * plateW < int(neededPart): 
+    if plateL * plateW < int(neededPart): 
         print(f'Тут вся плитка - {plateL * plateW} долек, перебор...')
     else:
-        neededPart = int(neededPart)
+        #neededPart = int(neededPart)
         
         if neededPart % plateW == 0 or neededPart % plateL == 0:
             print("Вполне реальная задача,")

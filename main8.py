@@ -39,8 +39,6 @@ while flag:
     if plateL * plateW < int(neededPart): 
         print(f'Тут вся плитка - {plateL * plateW} долек, перебор...')
     else:
-        #neededPart = int(neededPart)
-        
         if neededPart % plateW == 0 or neededPart % plateL == 0:
             print("Вполне реальная задача,")
             print(" Yes")

@@ -15,5 +15,6 @@ while numTemp > 0:
     summa += numTemp % 10
     numTemp = numTemp // 10
 print(f'Сумма цифр числа {number} равна {summa}')
+
 print('=============================================')
 print()
